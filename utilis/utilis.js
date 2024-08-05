@@ -15,8 +15,19 @@ import {
   setDoc,
   getDoc,
   getDocs,
+  updateDoc,
+  arrayUnion,
+  arrayRemove,
+  query,
+  where,
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-import { getStorage, ref, uploadBytes, getDownloadURL,  } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
+import {
+  getStorage,
+  ref,
+  uploadBytes,
+  getDownloadURL,
+  
+} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDNXIdGU4-ywJ-9T8vuLRNAd8G5F-moRaU",
@@ -51,7 +62,12 @@ export {
   getDocs,
   ref,
   addDoc,
+  updateDoc,
+  arrayUnion,
+  arrayRemove,
   uploadBytes,
   getDownloadURL,
-  collection
+  collection,
+  query,
+  where,
 };
